@@ -21,16 +21,16 @@ Created for the course: YouCode II Frontend Developer
 
 1. Enter the task content, then add with the button or press "Enter". The task will be moved to the list below, and the input will be cleared and focus set on it.
 
-![Adding new task](images/readmeGif1.gif)
+![Adding new task](src/images/readmeGif1.gif)
 
 2. Use the icons on the right and left of each task to modify the list by marking the selected task as completed or deleting it. Completed task will be crossed out, deleted task will disappear from the list.
 
-![Marking tasks as completed or removing tasks](images/readmeGif2.gif)
+![Marking tasks as completed or removing tasks](src/images/readmeGif2.gif)
 
 3. Use the "Ukryj ukończone" button to hide all completed tasks, then "Pokaż ukończone" to show them again. 
 Use the "Ukończ wszystkie" button to mark each task as completed. Once this option is used, the button is disabled from use.
 
-![Addictional buttons usage](images/readmeGif3.gif)
+![Addictional buttons usage](src/images/readmeGif3.gif)
 
 
 ## Technologies
