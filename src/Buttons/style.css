@@ -1,9 +1,9 @@
-.section__buttonsContainer {
+.buttons {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section__button {
+.buttons__button {
     border: none;
     background-color: transparent;
     color: hsl(180, 100%, 25%);
@@ -13,17 +13,17 @@
 }
 
 @media(max-width: 767px) {
-    .section__button {
+    .buttons__button {
         flex-basis: 100%;
         margin: 10px;
     }
 }
 
-.section__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 30%);
 }
 
-.section__button:disabled {
+.buttons__button:disabled {
     color: hsla(0, 4%, 50%, 0.3);
     cursor: not-allowed;
 }
