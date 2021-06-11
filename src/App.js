@@ -15,6 +15,7 @@ function App() {
   return (
     <Contaianer>
       <h1>Lista zadań</h1>
+      
       <Section
         title={"Dodaj nowe zadanie"}
         mainContent={<Form />}
