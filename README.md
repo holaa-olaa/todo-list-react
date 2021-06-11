@@ -41,6 +41,8 @@ Project is created with:
 * FlexBox
 * ES6+
 * Media queries
+* Create React App
+* Babel
 	
 ## Setup
 To run this project just open the link in your browser. Task list is generated based on information entered by user. User can edit the list by adding new tasks, deleting them or marking as done (with possibility of unmarking).
