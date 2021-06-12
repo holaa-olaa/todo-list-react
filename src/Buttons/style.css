@@ -23,6 +23,10 @@
     color: hsl(180, 100%, 30%);
 }
 
+.buttons__button:active {
+    color: hsl(180, 100%, 35%);
+}
+
 .buttons__button:disabled {
     color: hsla(0, 4%, 50%, 0.3);
     cursor: not-allowed;
