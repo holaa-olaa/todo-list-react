@@ -26,12 +26,15 @@ function App() {
       if (task.id === id) {
         return { ...task, done: !task.done };
       }
-      return tasks;
+      return task;
     }))
   };
 
   const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({...tasks, done: true})));
+    setTasks(tasks => tasks.map(task => ({
+      ...task, 
+      done: true,
+    })));
   };
 
   return (
