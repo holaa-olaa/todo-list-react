@@ -8,6 +8,6 @@ const Section = ({ title, mainContent, extraHeaderContent }) => (
         </header>
         {mainContent}
     </section>
-)
+);
 
 export default Section;
