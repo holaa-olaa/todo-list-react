@@ -8,10 +8,8 @@ import { useState } from 'react';
 
 function App() {
   const [hideDoneTask, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "zacząć zadanie", done: true },
-    { id: 2, content: "skończyć zadanie", done: false },
-  ]);
+
+  const [tasks, setTasks] = useState([]);
 
   const toggleHideDone = () => {
     setHideDone(hideDoneTask => !hideDoneTask);
@@ -27,23 +25,23 @@ function App() {
         return { ...task, done: !task.done };
       }
       return task;
-    }))
+    }));
   };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
-      ...task, 
+      ...task,
       done: true,
     })));
   };
 
   const addNewTask = (content) => {
     setTasks(tasks => [
-      ...tasks, 
+      ...tasks,
       {
-        content, 
-        done: false, 
-        id: tasks.length ? tasks[tasks.length - 1].id +1 : 1,
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       },
     ]);
   };
@@ -60,22 +58,22 @@ function App() {
       <Section
         title={"Lista zadań"}
         mainContent=
-          {<Tasks
+        {<Tasks
           tasks={tasks}
           hideDoneTask={hideDoneTask}
           removeTasks={removeTasks}
           toggleTaskDone={toggleTaskDone}
-          />}
+        />}
         extraHeaderContent=
-          {<Buttons 
-          tasks={tasks} 
-          hideDoneTask={hideDoneTask} 
+        {<Buttons
+          tasks={tasks}
+          hideDoneTask={hideDoneTask}
           toggleHideDone={toggleHideDone}
           setAllDone={setAllDone}
-            />}
+        />}
       />
     </Contaianer>
   );
-}
+};
 
 export default App;
