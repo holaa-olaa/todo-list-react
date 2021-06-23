@@ -18,6 +18,8 @@ const Form = ({ addNewTask }) => {
         if (newTaskTrimmed !== "") {
             addNewTask(newTaskTrimmed);
         };
+        
+        focusInput();
     };
 
     return (
@@ -34,7 +36,7 @@ const Form = ({ addNewTask }) => {
                 required
                 ref={inputRef}
             />
-            <button onClick={focusInput} className="form__button" type="submit">
+            <button className="form__button" type="submit">
                 Dodaj zadanie
             </button>
         </form>
