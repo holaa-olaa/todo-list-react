@@ -1,9 +1,9 @@
-import './style.css';
+import { Container } from './styles.js';
 
 const Contaianer = ({ children }) => (
-    <main className="container">
+    <Container>
         {children}
-    </main>
+    </Container>
 );
 
 export default Contaianer;
