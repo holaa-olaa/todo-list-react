@@ -2,7 +2,7 @@ import Form from './Form';
 import Tasks from './Tasks';
 import Buttons from './Buttons';
 import Section from './Section';
-import Contaianer from './Container';
+import Container from './Container';
 import { useState } from 'react';
 import { useTasks } from './useTasks';
 
@@ -23,7 +23,7 @@ function App() {
   } = useTasks();
 
   return (
-    <Contaianer>
+    <Container>
       <h1>Lista zadań</h1>
 
       <Section
@@ -48,7 +48,7 @@ function App() {
           setAllDone={setAllDone}
         />}
       />
-    </Contaianer>
+    </Container>
   );
 };
 
