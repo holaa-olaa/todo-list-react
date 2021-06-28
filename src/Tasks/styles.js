@@ -36,7 +36,7 @@ export const Button = styled.button`
     cursor: pointer;
     transition: background 0.3s;
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({toggleDone}) => toggleDone && css`
         background-color: hsl(120, 61%, 30%);
 
         &:hover {
@@ -47,7 +47,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${({ remove }) => remove && css`
+    ${({remove}) => remove && css`
         background-color: hsl(348, 83%, 45%);
 
         &:hover {

@@ -7,26 +7,26 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const SubmitButton = styled.button`
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.colors.teal};
     color: hsl(0, 0%, 100%);
     padding: 10px;
     border: none;
     cursor: pointer;
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
         transform: scale(1.1);
         transition: 0.4s;
     }
 
     &:active {
-        background-color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 `;
 
