@@ -13,7 +13,7 @@ export const Button = styled.button`
     transition: color 0.4s;
     cursor: pointer;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         flex-basis: 100%;
         margin: 10px;
     }
@@ -27,7 +27,7 @@ export const Button = styled.button`
     }
 
     &:disabled {
-        color: ${({ theme }) => theme.colors.lightGrey};
+        color: ${({ theme }) => theme.colors.darkGrey};
         cursor: not-allowed;
     }
 `;

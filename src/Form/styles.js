@@ -7,14 +7,14 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const SubmitButton = styled.button`
     background-color: ${({ theme }) => theme.colors.teal};
-    color: hsl(0, 0%, 100%);
+    color: ${({ theme }) => theme.colors.white};
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -31,6 +31,6 @@ export const SubmitButton = styled.button`
 `;
 
 export const Input = styled.input`
-    border: 1px solid hsl(0, 0%, 93%);
+    border: 1px solid ${({ theme }) => theme.colors.grey};
     padding: 10px;
 `;

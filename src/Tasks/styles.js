@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 1px solid hsl(0, 0%, 93%);
+    border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
     padding: 10px;
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -31,30 +31,30 @@ export const Button = styled.button`
     border: none;
     height: 30px;
     width: 30px;
-    color: hsl(0, 0%, 100%);
+    color: ${({ theme }) => theme.colors.white};
     padding: 0;
     cursor: pointer;
     transition: background 0.3s;
 
-    ${({toggleDone}) => toggleDone && css`
-        background-color: hsl(120, 61%, 30%);
+    ${({ toggleDone }) => toggleDone && css`
+        background: ${({ theme }) => theme.colors.green};
 
         &:hover {
-            background-color: hsl(120, 61%, 35%);
+            filter: brightness(110%);
         }
         &:active {
-            background-color: hsl(120, 61%, 40%);
+            filter: brightness(120%);
         }
     `}
 
-    ${({remove}) => remove && css`
-        background-color: hsl(348, 83%, 45%);
+    ${({ remove }) => remove && css`
+        background: ${({ theme }) => theme.colors.red};
 
         &:hover {
-            background-color: hsl(348, 83%, 50%);
+            filter: brightness(110%);
         }
         &:active {
-            background-color: hsl(348, 83%, 55%);
+            filter: brightness(120%);
         }
     `}
 `;
