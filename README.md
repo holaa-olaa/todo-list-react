@@ -36,13 +36,14 @@ Use the "Ukończ wszystkie" button to mark each task as completed. Once this opt
 ## Technologies
 Project is created with:
 * HTML
-* CSS (BEM naming convetion)
 * Grid
 * FlexBox
 * ES6+
 * Media queries
 * Create React App
 * Babel
+* Styled Components
+* Webpack
 	
 ## Setup
 To run this project just open the link in your browser. Task list is generated based on information entered by user. User can edit the list by adding new tasks, deleting them or marking as done (with possibility of unmarking).
