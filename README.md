@@ -12,7 +12,7 @@ Check it out! ---> https://holaa-olaa.github.io/todo-list-react/
 
 ## General info
 
-A simple application that allows you to create your own task list- adding, removing and changing the state of your task. All information is saved so you can back to the page and see the same content. Graphic design using CSS.
+A simple application that allows you to create your own task list- adding, removing or marking your task as done. All information is saved in the browser so you can back to the page and see the same content. Graphic design using CSS.
 
 Created for the course: YouCode II Frontend Developer
 
