@@ -12,7 +12,7 @@ Check it out! ---> https://holaa-olaa.github.io/todo-list-react/
 
 ## General info
 
-A simple application that allows you to convert exchange rates based on constant variables specified in code. It uses functions in JavaScript allowing for quick and accurate calculations. Graphic design using CSS.
+A simple application that allows you to create your own task list- adding, removing and changing the state of your task. All information is saved so you can back to the page and see the same content. Graphic design using CSS.
 
 Created for the course: YouCode II Frontend Developer
 
